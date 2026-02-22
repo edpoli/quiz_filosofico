@@ -38,13 +38,13 @@ const domande = [{
   risposte: [
     { testo: "Un filosofo vero", filosofo: "platone" },
     { testo: "Una persona esplosiva", filosofo: "nietzsche" },
-    { testo: "Un po'pessimista", filosofo: "schopenhauer" }
+    { testo: "Un po' pessimista", filosofo: "schopenhauer" }
   ]
 },
 
 {
   id: 4,
-  testo: "Quando son d'umore nero allora scrivo...?",
+  testo: "Se son d'umore nero allora scrivo...?",
   risposte: [
     { testo: "Dialoghi", filosofo: "platone" },
     { testo: "Aforismi", filosofo: "nietzsche" },
