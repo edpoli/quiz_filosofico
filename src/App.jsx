@@ -43,7 +43,7 @@ const domande = [{
 },
 
 {
-  id: 4,
+  id: 5,
   testo: "Se son d'umore nero allora scrivo...?",
   risposte: [
     { testo: "Dialoghi", filosofo: "platone" },
@@ -176,7 +176,7 @@ export default function App() {
   return (
 
 
-    <div className="min-h-screen bg-green-950 dark:bg-green-950 text-stone-100 dark:text-stone-100 flex items-center justify-center p-8 font-serif">
+    <div className="min-h-screen bg-stone-100 dark:bg-green-950 text-zinc-600 dark:text-stone-100 flex items-center justify-center p-8 font-serif">
       <div className="w-full max-w-lg">
 
 
@@ -184,7 +184,7 @@ export default function App() {
         {schermata === "intro" ? (
           // SCHERMATA INIZIALE
           <div className="text-center">
-            <p className="text-yellow-200 dark:text-yellow-200 text-xs tracking-widest uppercase mb-2">Quiz filosofico</p>
+            <p className="text-yellow-600 dark:text-yellow-200 text-xs tracking-widest uppercase mb-2">Quiz filosofico</p>
             <h1 className="text-5xl font-black mb-2">Filosofia</h1>
             <h2 className="text-5xl font-black dark:text-orange-700 text-orange-700 mb-8">Applicata</h2>
             <p className="text-stone-400 dark:text-stone-400 mb-10 text-sm">Scopri a quale grande filosofo ti avvicini di più</p>
@@ -201,7 +201,7 @@ export default function App() {
             {/* HEADER */}
             <div className="text-center mb-10">
               <p className="text-yellow-200 dark:text-yellow-200 text-xs tracking-widest uppercase mb-2">Quiz filosofico</p>
-              <h1 className="text-3xl font-black text-slate-100  dark:text-stone-100">Quale filosofo sei?</h1>
+              <h1 className="text-3xl font-black text-slate-900  dark:text-stone-100">Quale filosofo sei?</h1>
             </div>
 
             {/* QUIZ o RISULTATO */}
@@ -212,8 +212,8 @@ export default function App() {
                 {/* Barra progresso */}
                 <div className="mb-8">
                   <div className="flex justify-between mb-2">
-                    <span className="text-xs dark:text-slate-100 text-slate-100">Domanda {indiceDomanda + 1} di {domande.length}</span>
-                    <span className="text-xs text-slate-100 dark:text-slate-100">{Math.round((indiceDomanda / domande.length) * 100)}%</span>
+                    <span className="text-xs dark:text-slate-600 text-slate-100">Domanda {indiceDomanda + 1} di {domande.length}</span>
+                    <span className="text-xs text-slate-600 dark:text-slate-100">{Math.round((indiceDomanda / domande.length) * 100)}%</span>
                   </div>
                   <div className="h-1   bg-zinc-200 rounded-full">
                     <div
@@ -224,7 +224,7 @@ export default function App() {
                 </div>
 
                 {/* Domanda */}
-                <h2 className="text-xl font-bold mb-6 leading-snug">{domanda.testo}</h2>
+                <h2 className="text-zinc-900 dark:text-stone-100 text-xl font-bold mb-6 leading-snug">{domanda.testo}</h2>
 
                 {/* Risposte */}
                 {domanda.risposte.map((r, i) => (
@@ -241,7 +241,7 @@ export default function App() {
 
                   <button
                     onClick={indietro}
-                    className="mt-2 py-4 w-full px-6 rounded-xl border border-zinc-700 text-stone-300 dark:text-stone-300 font-bold font-serif hover:border-zinc-500 transition-all duration-200"
+                    className="mt-2 py-4 w-full px-6 rounded-xl border border-zinc-400 dark:border-zinc-700 text-stone-700 dark:text-stone-300 font-bold font-serif hover:border-zinc-500 transition-all duration-200"
                   >
                     ← Indietro
                   </button>
@@ -252,8 +252,8 @@ export default function App() {
                     disabled={rispostaCorrente === undefined}
                     className={`mt-2 w-full py-4 rounded-xl font-bold text-base transition-all duration-200 font-serif
                 ${rispostaCorrente !== undefined
-                        ? "bg-orange-800 text-slate-200 dark:text-slate-200 cursor-pointer hover:bg-orange-900"
-                        : "bg-transparent border border-zinc-700 text-slate-100 dark:text-slate-100 cursor-not-allowed"
+                        ? "bg-orange-800 text-slate-900 dark:text-slate-200 cursor-pointer hover:bg-orange-900"
+                        : "bg-transparent border border-zinc-700 text-slate-900 dark:text-slate-200 cursor-not-allowed"
                       }`}
                   >
                     {indiceDomanda < domande.length - 1 ? "Avanti →" : "Scopri il risultato →"}
