@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: dark;
+  }
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
