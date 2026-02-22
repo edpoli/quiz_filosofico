@@ -72,9 +72,9 @@ const filosofi = {
     emoji: "💣",
     idea: "Diventa ciò che sei",
     desc: "Spirito critico e indipendente, non accetti valori preconfezionati. Ti distingui per energia, determinazione e una certa intensità di pensiero. Ami mettere in discussione ciò che gli altri danno per scontato. Attenzione solo a non trasformare ogni discussione in una rivoluzione personale.",
-    colore: "text-red-200",
-    bordo: "border-red-400",
-    bg: "bg-red-400",
+    colore: "text-yellow-200",
+    bordo: "border-yellow-400",
+    bg: "bg-yellow-400",
   },
 
   schopenhauer: {
@@ -83,7 +83,7 @@ const filosofi = {
     emoji: "🕰️",
     idea: "La vita oscilla come un pendolo tra il dolore e la noia.",
     desc: "Lucido osservatore della natura umana, possiedi una sensibilità profonda e una vena riflessiva. Comprendi i limiti e le contraddizioni dell’esistenza, ma sai anche apprezzare i momenti di quiete e contemplazione. Il tuo realismo può sembrare severo, ma nasconde grande consapevolezza.",
-    colore: "text-pink-200",
+    colore: "text-violet-200",
     bordo: "border-violet-900",
     bg: "bg-violet-900",
   },
